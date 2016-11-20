@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <title></title>
+	    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
+	</head>
+
+	<body>
+		<div>
+	    
+		</div>	
+
+	   	<script>
+	   		//console.log('start');
+
+	   		var cnt = 100;
+
+	   		for(var i = 1; i <= cnt; i++) {  			
+	   			var div_3 = i % 3,
+	   				div_5 = i % 5,
+	   				char = i;
+	   			
+	   			if(div_5 == 0) { char = 'buzz' };
+	   			if(div_3 == 0) { char = 'fizz' };
+
+				console.log('i', i, 'char', char);
+
+	   		};
+
+	   		//console.log('stop');
+	   	</script>		
+	</body>
+</html>

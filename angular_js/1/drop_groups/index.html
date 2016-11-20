@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html ng-app="app">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	
+	<body class="body" ng-controller="mainCtrl">
+		<div ng-repeat="group in groupsArr">
+			<div class="box id_{{$index}}" ng-class="{'disabled': stateArr['id_{{$index}}']}">
+				<h2 class="h2" ng-click="changeState($index)">
+					<div class="h2_inner">
+						{{group}}
+						<span class="sign"></span>
+					</div>
+				</h2>
+
+				<div class="text">In order to write a hello world application in Angular, all we have to do is it include Angular JS JavaScript in our HTML document.In order to write a hello world application in Angular, all we have to do is it include Angular JS JavaScript in our HTML document.In order to write a hello world application in Angular, all we have to do is it include Angular JS JavaScript in our HTML document.In order to write a hello world application in Angular, all we have to do is it include Angular JS JavaScript in our HTML document.In order to write a hello world application in Angular, all we have to do is it include Angular JS JavaScript in our HTML document.In order to write a hello world application in Angular, all we have to do is it include Angular JS JavaScript in our HTML document.</div>
+			</div>
+		</div>
+
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
